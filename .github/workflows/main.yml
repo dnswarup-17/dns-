@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Freelance Web Designer | Premium Digital Experiences</title>
+    <meta name="description"
+        content="Expert UI/UX designer and full-stack web developer offering custom web design, redesigns, and e-commerce solutions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body class="dark-theme">
+    <!-- Background Decorators -->
+    <div class="bg-shape bg-teal"></div>
+    <div class="bg-shape bg-orange"></div>
+
+    <nav class="navbar glass-effect" id="navbar">
+        <div class="nav-container" style="display: flex; gap: 1rem; align-items: center; justify-content: flex-start;">
+            <button class="floating-menu-btn glass-effect" id="floating-menu-btn" title="Open Dashboard">
+                <span class="menu-icon">☰</span>
+            </button>
+            <a href="#" class="logo" style="margin-right: auto;">DNS</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Work</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li id="nav-auth-login"><a href="#" id="open-auth-btn" class="nav-link"
+                        style="font-weight: 600; color: var(--teal-light);">Login</a></li>
+                <li id="nav-auth-user" style="display: none;"><span id="user-display"
+                        class="nav-link text-gradient"></span></li>
+                <li id="nav-auth-logout" style="display: none;"><a href="#" id="logout-btn"
+                        class="nav-link text-muted">Logout</a></li>
+                <li><a href="#contact" class="btn btn-outline btn-small">Get a Quote</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <header id="hero" class="hero section">
+            <div class="container hero-content fade-in">
+                <p class="hero-tagline">Award-Winning Digital Craftsman</p>
+                <h1 class="hero-title">
+                    Crafting <span class="text-gradient">Digital Experiences</span><br>
+                    That Grow Your Business
+                </h1>
+                <p class="hero-subtitle">
+                    I build pixel-perfect, highly responsive, and dynamic web applications designed to convert visitors
+                    into loyal customers. Let's create something extraordinary.
+                </p>
+                <div class="cta-group">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Start a Project</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. Services Offered Section -->
+        <section id="services" class="services section bg-darker">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">What I Do</h2>
+                    <p class="section-desc">Delivering end-to-end solutions tailored to your business needs, utilizing
+                        cutting-edge tech and design principles.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-effect slide-up">
+                        <div class="icon-wrapper">🚀</div>
+                        <h3>Custom Web Design</h3>
+                        <p>Beautiful, high-performing websites built from scratch to reflect your unique brand identity
+                            and goals.</p>
+                    </div>
+                    <div class="service-card glass-effect slide-up" style="transition-delay: 100ms;">
+                        <div class="icon-wrapper">✨</div>
+                        <h3>Website Redesigns</h3>
+                        <p>Modernizing outdated digital platforms with a focus on seamless user experience (UX) and
+                            aesthetics.</p>
+                    </div>
+                    <div class="service-card glass-effect slide-up" style="transition-delay: 200ms;">
+                        <div class="icon-wrapper">🎯</div>
+                        <h3>Landing Pages</h3>
+                        <p>Hyper-focused, conversion-optimized single pages guaranteed to capture leads effectively.</p>
+                    </div>
+                    <div class="service-card glass-effect slide-up" style="transition-delay: 300ms;">
+                        <div class="icon-wrapper">🛒</div>
+                        <h3>E-commerce Solutions</h3>
+                        <p>Scalable and secure online stores engineered for high sales and frictionless user checkout
+                            journeys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Portfolio Gallery Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-desc">A glimpse into recent digital transformations. See how I turn ideas into
+                        reality.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item fade-in">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=800&auto=format&fit=crop"
+                            alt="E-Commerce Interface" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Vanguard Store</h3>
+                                <p>E-commerce / React & Commerce.js</p>
+                                <a href="#" class="view-project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" style="transition-delay: 150ms;">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                            alt="Admin Dashboard UI" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Nexus Dashboard</h3>
+                                <p>SaaS Platform / Vue.js & Tailwind</p>
+                                <a href="#" class="view-project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" style="transition-delay: 300ms;">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+                            alt="Finance Landing Page" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>FinTrack App</h3>
+                                <p>Marketing Site / HTML & GSAP</p>
+                                <a href="#" class="view-project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item fade-in" style="transition-delay: 450ms;">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=800&auto=format&fit=crop"
+                            alt="Creative Agency Portfolio" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Aura Creatives</h3>
+                                <p>Portfolio / Next.js & Framer Motion</p>
+                                <a href="#" class="view-project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. My Process Section -->
+        <section id="process" class="process section bg-darker">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">My Process</h2>
+                    <p class="section-desc">A streamlined workflow designed to ensure transparency, quality, and on-time
+                        delivery.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item slide-up">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Discovery & Strategy</h3>
+                            <p>We kick off with a deep dive into your goals, target audience, and competitive landscape
+                                to form a robust technical strategy.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-up" style="transition-delay: 150ms;">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>UX/UI Design</h3>
+                            <p>I craft high-fidelity wireframes and interactive prototypes, refining the visual identity
+                                before any code is written.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-up" style="transition-delay: 300ms;">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Development</h3>
+                            <p>Transforming the approved designs into a responsive, accessible, and highly performant
+                                website using modern web technologies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-up" style="transition-delay: 450ms;">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content glass-effect">
+                            <h3>Launch & Handoff</h3>
+                            <p>Rigorous QA testing across devices, SEO optimization, deployment, and providing a
+                                handover guide so you can manage your content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. About the Designer Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid fade-in">
+                    <div class="about-image-wrapper glass-effect">
+                        <img src="george.png" alt="Profile of George" loading="lazy" class="about-image">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">About George</h2>
+                        <h3 class="subtitle text-gradient">Aspiring Web Developer & Designer.</h3>
+                        <p>I specialize in building digital experiences that don't just look stunning—they perform
+                            brilliantly. I believe in clean code, user-centered design, and creating web applications
+                            that truly stand out.</p>
+                        <p>I am available for freelance work and new opportunities. You can reach out to me directly
+                            below:</p>
+
+                        <div class="contact-details" style="margin-top: 1.5rem;">
+                            <div class="contact-item">
+                                <span class="icon">📧</span>
+                                <a href="mailto:25pa1a0556@vishnu.edu.in">25pa1a0556@vishnu.edu.in</a>
+                            </div>
+                            <div class="contact-item" style="margin-top: 1rem;">
+                                <span class="icon">📱</span>
+                                <a href="https://wa.me/8985066994" target="_blank" rel="noopener noreferrer">WhatsApp:
+                                    8985066994</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials Section -->
+        <section id="testimonials" class="testimonials section bg-darker">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Client Success Stories</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-effect fade-in">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">"The website redesign completely transformed our brand image. Within
+                            the first month, our conversion rate skyrocketed by 45%. Absolute professionalism and
+                            top-tier code quality."</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-teal"></div>
+                            <div>
+                                <h4>Sarah Jenkins</h4>
+                                <span>CEO, TechNova</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-effect fade-in" style="transition-delay: 200ms;">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">"Incredible attention to detail. The custom animations and sleek
+                            dark mode theme made us stand out among our competitors. Seamless communication throughout
+                            the entirely process."</p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-orange"></div>
+                            <div>
+                                <h4>David Chen</h4>
+                                <span>Founder, Orbit Apps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact & Lead Capture Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-wrapper glass-effect fade-in">
+                    <div class="contact-info">
+                        <h2 class="section-title">Ready to Elevate Your Online Presence?</h2>
+                        <p>I am currently accepting new clients for custom and premium project builds. Let's discuss
+                            your vision.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="icon">📧</span>
+                                <a href="mailto:25pa1a0556@vishnu.edu.in">25pa1a0556@vishnu.edu.in</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="icon">📱</span>
+                                <a href="https://wa.me/8985066994" target="_blank" rel="noopener noreferrer">WhatsApp:
+                                    8985066994</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="icon">📍</span>
+                                <span>Based in San Francisco, working globally.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message <span
+                                    class="btn-icon">→</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Left Side Menu (Button logic moved to Navbar) -->
+
+    <div class="side-panel-overlay" id="side-panel-overlay"></div>
+    <aside class="side-panel glass-effect" id="side-panel">
+        <button class="side-panel-close" id="side-panel-close">&times;</button>
+        <div class="side-panel-content">
+            <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 2rem;">Dashboard</h3>
+
+            <!-- Dynamic User Greeting (Shown only securely on Auth) -->
+            <div id="side-user-meta"
+                style="display: none; margin-bottom: 2rem; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; border: 1px solid var(--glass-border);">
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 5px;">Hi! <span
+                        id="side-username-display" class="text-teal" style="font-weight: 600;"></span></p>
+                <div id="side-user-bio-display"
+                    style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 15px; font-style: italic; line-height: 1.4; white-space: pre-wrap;">
+                </div>
+                <button id="open-profile-btn" class="btn btn-outline"
+                    style="width: 100%; font-size: 0.85rem; padding: 8px;">Edit Profile</button>
+            </div>
+
+            <div class="side-section">
+                <h4 class="text-teal" style="margin-bottom: 1rem; color: var(--teal-light);">Account Settings</h4>
+                <ul class="side-links">
+                    <li id="side-login-item"><a href="#" id="side-login-btn">Login / Sign Code</a></li>
+                    <li id="side-logout-item" style="display: none;"><a href="#" id="side-logout-btn"
+                            class="text-muted">Logout</a></li>
+                    <li><a href="#" id="side-reset-btn" class="text-muted">Reset Password</a></li>
+                </ul>
+            </div>
+
+            <hr
+                style="border-color: var(--glass-border); margin: 2rem 0; background: none; border-top: 1px solid var(--glass-border);">
+
+            <div class="side-section">
+                <h4 class="text-teal" style="margin-bottom: 1rem; color: var(--teal-light);">Customer Care</h4>
+                <ul class="side-links contact-links">
+                    <li>
+                        <a href="mailto:25pa1a0556@vishnu.edu.in" class="contact-card">
+                            <span class="icon" style="display: flex; align-items: center;"><img
+                                    src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail" width="24"
+                                    height="24"></span>
+                            <div>
+                                <span class="contact-label">Email Support</span>
+                                <span class="contact-detail" style="font-size:0.75rem;">25pa1a0556@vishnu.edu.in</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/8985066994" target="_blank" rel="noopener noreferrer"
+                            class="contact-card">
+                            <span class="icon" style="display: flex; align-items: center;"><img
+                                    src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" width="26"
+                                    height="26"></span>
+                            <div>
+                                <span class="contact-label">WhatsApp Us</span>
+                                <span class="contact-detail">8985066994</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal-overlay" id="auth-modal">
+        <div class="auth-modal-content glass-effect">
+            <button class="auth-modal-close" id="close-auth-btn">&times;</button>
+            <h2 class="section-title" id="auth-title" style="font-size: 2rem;">Welcome Back</h2>
+            <p class="section-desc" id="auth-subtitle" style="margin-bottom: 1.5rem;">Please log in to your account.</p>
+
+            <form id="auth-form" class="contact-form">
+                <div class="form-group" id="name-group" style="display: none;">
+                    <label for="auth-name">Name</label>
+                    <input type="text" id="auth-name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="auth-email">Email</label>
+                    <input type="email" id="auth-email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="auth-password">Password</label>
+                    <input type="password" id="auth-password" required placeholder="••••••••">
+                    <div style="text-align: right; margin-top: 5px;" id="forgot-password-wrapper">
+                        <a href="#" class="text-gradient" id="forgot-password-btn"
+                            style="font-size: 0.85rem; font-weight: 500;">Forgot Password?</a>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="auth-submit-btn">Login</button>
+            </form>
+
+            <div class="auth-toggle-wrapper" style="margin-top: 1.5rem; text-align: center;">
+                <span class="text-muted" id="auth-toggle-text">Don't have an account?</span>
+                <a href="#" class="text-gradient" id="auth-toggle-btn" style="font-weight: 600; margin-left: 5px;">Sign
+                    Up</a>
+            </div>
+            <div id="auth-error-msg" style="color: #ef4444; margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="#" class="text-muted" id="auth-skip-btn"
+                    style="font-size: 0.85rem; transition: color 0.3s; text-decoration: underline;">Skip for now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Settings Modal -->
+    <div class="auth-modal-overlay" id="profile-modal">
+        <div class="auth-modal-content glass-effect">
+            <button class="auth-modal-close" id="profile-modal-close">&times;</button>
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">Profile Settings
+            </h2>
+            <p class="section-subtitle" style="margin-bottom: 1.5rem; color: var(--text-muted);">Manage your personal
+                details</p>
+
+            <div style="margin-bottom: 1.5rem;">
+                <button id="profile-password-reset-btn" class="btn btn-outline"
+                    style="width: 100%; font-size: 0.85rem;">Send Password Reset Email</button>
+            </div>
+
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="profile-bio">Personal Details / Bio</label>
+                    <textarea id="profile-bio" rows="4" maxlength="350"
+                        placeholder="Tell us about yourself (Max 350 characters)..."></textarea>
+                    <div style="text-align: right; font-size: 0.75rem; color: var(--text-muted); margin-top: 5px;"><span
+                            id="bio-char-count">0</span> / 350</div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="profile-submit-btn">Save Profile</button>
+            </form>
+            <div id="profile-status-msg" style="margin-top: 1rem; text-align: center; font-size: 0.9rem;"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">DNS</div>
+                <div class="footer-socials">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Dribbble</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> DNS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
